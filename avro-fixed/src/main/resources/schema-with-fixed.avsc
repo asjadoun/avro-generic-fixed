@@ -1,0 +1,14 @@
+{
+  "namespace" : "tech.savant",
+  "type" : "record",
+  "name" : "Catalog",
+  "fields" : [
+    {"name":"id","type":"string"}
+  ,{"name":"code","type":{"type": "fixed", "size": 5, "name": "fixed_code"}}
+  ,{"name":"names","type":{"type":"array","items":"string"}}
+  ,{"name":"gender","type":{"type":"enum","name":"sex","symbols": ["Male", "Female"]}}
+  ,{"name":"meta","type":{"type":"map","values":"string"}}
+//  ,{"name":"OS","type":"string"}
+//  ,{"name":"OS","type":"string","default": "WIN"}
+  ]
+}
